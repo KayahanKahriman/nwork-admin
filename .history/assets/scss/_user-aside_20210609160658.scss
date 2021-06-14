@@ -1,0 +1,15 @@
+#user-aside {
+  width: var(--user-aside-width);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: red;
+  height: 100vw;
+}
+#user-image {
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+}

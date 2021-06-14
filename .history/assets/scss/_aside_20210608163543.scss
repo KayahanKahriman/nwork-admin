@@ -1,0 +1,9 @@
+aside {
+  width: var(--aside-width);
+  height: 100vh;
+  background: var(--dark-blue);
+
+  * {
+    color: white;
+  }
+}

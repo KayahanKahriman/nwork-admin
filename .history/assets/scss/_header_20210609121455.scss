@@ -1,0 +1,20 @@
+header {
+  height: var(--header-height);
+  #header-left {
+    width: var(--aside-width);
+    background: var(--logo-bg);
+    height: 100%;
+  }
+  #header-right {
+    width: var(--main-width);
+    border-bottom: 1px solid var(--border-color);
+    height: 100%;
+
+    #user {
+      i {
+        font-style: normal;
+        display: block;
+      }
+    }
+  }
+}

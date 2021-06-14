@@ -1,0 +1,67 @@
+@import "main";
+
+main {
+  margin-left: var(--aside-width);
+  width: var(--main-width);
+}
+
+.white-box {
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  height: 100%;
+}
+
+.shadow-box {
+  box-shadow: 0 0 5px #00000020;
+}
+
+.box-title {
+  color: var(--box-title-color);
+  text-transform: capitalize;
+}
+
+.jumbo-text {
+  font-size: 4em;
+}
+
+.box-value-big-text {
+  font-size: 2.3em;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.gray-box {
+  background: var(--light-gray);
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1140px) {
+}
+
+@media only screen and (min-width: 1280px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi) {
+}

@@ -1,0 +1,39 @@
+header {
+  height: var(--header-height);
+  #header-left {
+    width: var(--aside-width);
+    background: var(--logo-bg);
+    height: 100%;
+  }
+  #header-right {
+    width: var(--main-width);
+    border-bottom: 1px solid var(--border-color);
+    height: 100%;
+
+    #user {
+      span {
+        font-style: normal;
+        display: block;
+        font-size: 0.8em;
+      }
+      p {
+        font-size: 0.9em;
+        font-family: $poppins-medium;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.has-notification {
+  position: relative;
+  i {
+    background: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+}

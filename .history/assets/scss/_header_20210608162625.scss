@@ -1,0 +1,9 @@
+header {
+  #header-left {
+    width: $aside-width;
+  }
+  #header-right {
+    width: $main-width;
+    box-shadow: 0 0 10px #00000010;
+  }
+}

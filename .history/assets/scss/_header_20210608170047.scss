@@ -1,0 +1,10 @@
+header {
+  #header-left {
+    width: var(--aside-width);
+    background: var(--light-gray);
+  }
+  #header-right {
+    width: var(--main-width);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
