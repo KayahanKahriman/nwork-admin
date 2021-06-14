@@ -1,0 +1,32 @@
+#user-aside {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background: white;
+  width: calc(100vw - (var(--main-width) + var(--aside-width)));
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+
+  #profile {
+    column-gap: 35px;
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.has-notification {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary-color);
+  }
+}

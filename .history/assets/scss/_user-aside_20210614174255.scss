@@ -1,0 +1,17 @@
+#user-aside {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background: white;
+  width: calc(100vw - (var(--main-width) + var(--aside-width)));
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+
+  #profile {
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
