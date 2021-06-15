@@ -1,0 +1,114 @@
+@import "./flex-grid/flexgrid";
+@import "vars";
+@import "colors";
+@import "img";
+@import "sizes";
+@import "header";
+@import "aside";
+@import "user-aside";
+@import "accordion-menu";
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.woff") format("woff"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.woff") format("woff"),
+    url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.woff") format("woff"),
+    url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("Poppins-Light.woff2") format("woff2"),
+    url("Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.cf:after,
+.cf:before {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0;
+
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: $default-font;
+  font-weight: 400;
+  background: white;
+  overflow-x: hidden;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.title {
+  color: var(--purpish);
+  font-size: 1.1em;
+}
