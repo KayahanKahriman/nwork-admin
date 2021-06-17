@@ -4,7 +4,7 @@ main {
   margin-left: var(--aside-width);
   width: var(--main-width);
   background: var(--bg-color);
-  height: var(--main-height);
+  height: 100%;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   position: relative;
@@ -25,11 +25,8 @@ main {
 
   .big-box-title,
   .value-jumbo-text {
-    top: 0;
-    width: 250px;
-    text-align: left;
-    left: 0;
-    display: block;
+    position: absolute;
+    left: 40px;
   }
 
   .big-box-title {
@@ -122,9 +119,6 @@ main {
     --body-overflow: visible;
     --row-gap-15: 15px;
   }
-  main:after {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -142,10 +136,7 @@ main {
 @media only screen and (min-width: 1280px) {
   :root {
     --body-overflow: hidden;
-    --row-gap-15: 0;
-  }
-  main:after {
-    display: block;
+    --row-gap-15: 15px;
   }
 }
 

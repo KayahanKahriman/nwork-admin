@@ -6,11 +6,9 @@
   background: white;
   top: 0;
   right: 0;
-  height: var(--user-aside-height);
-  z-index: 1;
+  height: 100vh;
 
   #profile {
-    height: var(--profile-height);
     #profile-links {
       column-gap: 35px;
     }
@@ -101,7 +99,7 @@
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(3) {
       i {
         border-radius: 0 50% 50% 50%;
       }
@@ -143,13 +141,13 @@
 }
 
 @media only screen and (min-width: 320px) {
-  #user-aside {
+  :root {
     --user-aside-position: relative;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  #user-aside {
-    --user-aside-position: fixed;
+  :root {
+    --user-aside-position: relative;
   }
 }

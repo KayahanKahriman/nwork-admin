@@ -6,7 +6,6 @@
   background: white;
   top: 0;
   right: 0;
-  height: var(--user-aside-height);
   z-index: 1;
 
   #profile {
@@ -101,7 +100,7 @@
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(3) {
       i {
         border-radius: 0 50% 50% 50%;
       }

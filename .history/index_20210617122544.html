@@ -4,10 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8" />
-    <title>Nwork</title>
+    <title>Başlık</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -90,11 +91,11 @@
             </div>
         </aside>
 
-        <main class="p-xl-5 py-lg-3 px-lg-2 d-flex flex-column justify-content-between my-3 my-lg-0 order-lg-2 order-2 row-gap-30">
+        <main class="p-xl-5 py-lg-3 px-lg-2 d-flex flex-column justify-content-between h-100 my-3 my-lg-0 order-lg-2 order-2">
             <header>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 d-flex align-items-center justify-content-between flex-column flex-lg-row row-gap-15 py-4 py-lg-0">
+                        <div class="col-12 d-flex align-items-center justify-content-between flex-column flex-lg-row row-gap-15 py-3 py-lg-0">
                             <div id="career" class="white-box d-inline-flex align-items-center p-4">
                                 <svg class="icon mr-2">
                                     <use xlink:href="#badge"></use>
@@ -105,17 +106,12 @@
                                 </svg>
                                 <span>Gold Director</span>
                             </div>
-                            <div class="d-flex align-items-center column-gap-15">
-                                <div id="career" class="white-box d-inline-flex align-items-center p-4">
-                                    <span>Seviye 3</span>
-                                </div>
-                                <a href="#" class="primary-button">
-                                    <svg class="icon mr-2">
-                                        <use xlink:href="#shopping-cart-add"></use>
-                                    </svg>
-                                    Seviye Alışverişi Yap
-                                </a>
-                            </div>
+                            <a href="#" class="primary-button">
+                                <svg class="icon mr-2">
+                                    <use xlink:href="#shopping-cart-add"></use>
+                                </svg>
+                                Seviye Alışverişi Yap
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +120,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <div class="white-box border-radius-20 p-xl-4 p-lg-2 p-3 d-flex justify-content-between flex-column flex-lg-row row-gap-15 ">
+                            <div class="white-box border-radius-20 p-xl-4 p-lg-2 p-3 d-flex justify-content-between flex-column flex-lg-row row-gap-15 my-3 my-lg-0">
                                 <div class="icon-box">
                                     <div class="icon-box-icon">
                                         <svg>
@@ -159,23 +155,23 @@
             </section>
             <section>
                 <div class="container-fluid">
-                    <div class="row row-gap-30">
+                    <div class="row">
                         <div class="col-xl-5 col-lg-6 col-12">
-                            <div id="total-earning" class="white-box border-radius-20 p-4 p-xl-4 p-lg-4 position-relative  h-100">
+                            <div id="total-earning" class="white-box border-radius-20 p-xl-4 p-lg-2 position-relative text-right h-100">
                                 <em class="big-box-title">TOPLAM KAZANILAN BRÜT TUTAR</em>
                                 <strong class="value-jumbo-text">375.300,20$</strong>
-                                <img src="./assets/images/success.svg" alt="">
+                                <img class="d-none d-lg-block" src="./assets/images/success.svg" alt="">
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-3 col-12 d-flex flex-column justify-content-between row-gap-30">
-                            <div class="red-box border-radius-20 p-4 p-xl-4 p-lg-3 position-relative h-50">
+                            <div class="red-box border-radius-20 p-xl-4 p-lg-2 position-relative h-50">
                                 <p class="box-value-title">Anlık Kazanç</p>
                                 <strong class="box-value-text">2750$</strong>
                                 <svg class="static-icon">
                                     <use xlink:href="#pulse"></use>
                                 </svg>
                             </div>
-                            <div class="white-box border-radius-20 p-4 p-xl-4 p-lg-3 position-relative h-50">
+                            <div class="white-box border-radius-20 p-xl-4 p-lg-2 position-relative h-50">
                                 <p class="box-value-title">Referans Kazançları</p>
                                 <strong class="box-value-text">18$</strong>
                                 <svg class="static-icon">
@@ -184,7 +180,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-12">
-                            <div class="white-box border-radius-20 p-4 p-xl-4 p-lg-3 position-relative h-100">
+                            <div class="white-box border-radius-20 p-xl-4 p-lg-2 position-relative h-100">
                                 <strong class="box-title-bold mb-3 d-inline-block">Son Hareketler</strong>
                                 <ul id="last-actions" class="styled-list mb-0 p-0">
                                     <li><a href="#">Barış Çiftci üye oldu</a></li>
@@ -194,7 +190,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
             <section id="news">
@@ -314,7 +309,7 @@
         </main>
 
         <section id="user-aside" class="text-center py-5 py-lg-3 order-lg-3 order-1">
-            <div id="profile" class="d-flex flex-column justify-content-between  align-items-center">
+            <div id="profile" class="d-flex flex-column justify-content-around align-items-center h-100">
                 <div id="profile-links" class="d-flex justify-content-center align-items-center">
                     <a href="#" id="user-messages" class="has-notification">
                         <svg class="icon">
@@ -336,13 +331,17 @@
                     <strong class="mb-2">Altıngül Toktogulova</strong>
                     <span>#KGZ25959759</span>
                 </div>
-                <div id="user-stats" class="d-flex w-100 justify-content-center">
+                <div id="user-stats" class="d-flex w-100">
                     <div class="user-stat-item">
                         <strong class="title">Sponsor<br>Olduklarım</strong>
                         <i>12</i>
                     </div>
                     <div class="user-stat-item">
-                        <strong class="title"> Yerleşim Bekleyenler </strong>
+                        <strong class="title">Yerleşim<br>Bekleyenler</strong>
+                        <i>3</i>
+                    </div>
+                    <div class="user-stat-item">
+                        <strong class="title"> Mevcut<br>Seviyeniz </strong>
                         <i>3</i>
                     </div>
                 </div>
@@ -565,6 +564,7 @@
     </svg>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script type="text/javascript" src="assets/js/accordion.js"></script>
 </body>
 

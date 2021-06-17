@@ -25,11 +25,8 @@ main {
 
   .big-box-title,
   .value-jumbo-text {
-    top: 0;
-    width: 250px;
-    text-align: left;
-    left: 0;
-    display: block;
+    position: relative;
+    left: 40px;
   }
 
   .big-box-title {

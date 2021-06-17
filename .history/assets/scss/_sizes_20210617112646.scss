@@ -1,17 +1,11 @@
 :root {
   --header-height: 80px;
+  --aside-width: 15vw;
   --user-aside-width: 20vw;
   --main-width: calc((100% - var(--aside-width)) - var(--user-aside-width));
 }
 
 @media only screen and (min-width: 320px) {
-  :root {
-    --aside-width: 0;
-    --profile-height: 120vh;
-    --user-aside-height: auto;
-    --main-height: auto;
-    --total-earning-img-size: 100px;
-  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -30,10 +24,6 @@
   :root {
     --font-size: 14px;
     --total-earning-img-size: 100px;
-    --aside-width: 15vw;
-    --profile-height: 100%;
-    --user-aside-height: 100vh;
-    --main-height: 100%;
   }
 }
 
