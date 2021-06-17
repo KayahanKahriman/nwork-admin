@@ -1,0 +1,6 @@
+:root {
+  --header-height: 80px;
+  --aside-width: 15vw;
+  --user-aside-width: 17vw;
+  --main-width: calc((100% - var(--aside-width)) - var(--user-aside-width));
+}

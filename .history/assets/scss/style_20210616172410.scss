@@ -1,0 +1,145 @@
+@import "main";
+
+main {
+  margin-left: var(--aside-width);
+  width: var(--main-width);
+  background: var(--bg-color);
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: -100vw;
+    top: 0;
+    background: var(--bg-color);
+  }
+}
+
+#total-earning {
+  position: relative;
+  .big-box-title,
+  .value-jumbo-text {
+    position: absolute;
+    left: 40px;
+  }
+
+  .big-box-title {
+    top: 40px;
+    width: 250px;
+    text-align: left;
+  }
+
+  .value-jumbo-text {
+    top: 120px;
+  }
+
+  img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+#last-actions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: 100px;
+}
+
+#news {
+  .date {
+    font-size: 14px;
+  }
+  a {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  .news-carousel-pagination {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: flex-end;
+    height: 15px;
+
+    .swiper-pagination-bullet {
+      height: 15px;
+      width: 7px;
+      transition: all 0.3s ease-in-out;
+      background: gray;
+      border-radius: 10px;
+      bottom: 0;
+
+      &.swiper-pagination-bullet-active {
+        height: 20px;
+        background: var(--primary-color);
+      }
+    }
+  }
+}
+
+@keyframes copied {
+  0% {
+    opacity: 0;
+    bottom: 0;
+    filter: blur(5px);
+  }
+  30% {
+    opacity: 1;
+    bottom: 25px;
+    filter: blur(0);
+  }
+  70% {
+    opacity: 1;
+    bottom: 25px;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    bottom: 60px;
+    filter: blur(5px);
+  }
+}
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1140px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  #middle {
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  #middle {
+    height: auto;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi) {
+}
