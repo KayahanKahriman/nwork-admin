@@ -1,0 +1,35 @@
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background: white;
+}
+
+#mobile-bar {
+  background: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+#toggle-button {
+  border-radius: 50%;
+  border: 10px white solid;
+}

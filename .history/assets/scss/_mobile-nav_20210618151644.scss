@@ -1,0 +1,45 @@
+@import "toggle-nav";
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background: white;
+}
+
+#mobile-bar {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1080 187' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath d='M661.541,0L1080,54.959L1080,186.037L0,186.037L0,54.959L418.459,0C430.323,56.216 480.266,98.471 540,98.471C599.734,98.471 649.677,56.216 661.541,0Z' style='fill:%2375BCC0;'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-position: center center;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 65px;
+  z-index: 2;
+  position: fixed;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+#toggle-button {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  background: var(--green);
+}

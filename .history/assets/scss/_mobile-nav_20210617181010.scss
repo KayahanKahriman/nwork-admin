@@ -1,0 +1,45 @@
+@import "toggle-nav";
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background: white;
+}
+
+#mobile-bar {
+  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 800 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath d='M450.058,0L800,27.995L800,99.995L0,99.995L0,27.995L349.942,0C351.984,25.844 373.632,46.211 400,46.211C426.368,46.211 448.016,25.844 450.058,0Z' style='fill:%2375BCC0;'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center center;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+#toggle-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  background: var(--green);
+}

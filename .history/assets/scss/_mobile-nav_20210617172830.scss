@@ -1,0 +1,43 @@
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background: white;
+}
+
+#mobile-bar {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 104'%3E%3Cpath d='M461.992,0L800,0L800,104L0,104L0,0L338.008,0C338.003,0.33 338,0.665 338,1C338,35.219 365.781,63 400,63C434.219,63 462,35.219 462,1C462,0.665 461.997,0.33 461.992,0Z' style='fill:%2375BCC0;' /%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center center;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+#toggle-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  bottom: 30px;
+  position: relative;
+  background: var(--primary-color);
+}

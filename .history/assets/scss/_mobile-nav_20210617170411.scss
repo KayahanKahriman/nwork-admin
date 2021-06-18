@@ -1,0 +1,50 @@
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background: white;
+}
+
+#mobile-bar {
+  background: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="none"><polygon points="20,20 20,180 180,100 " fill="black"/></svg>')
+      0/100% 100%,
+    linear-gradient(#fff, #fff);
+  -webkit-mask-composite: destination-out;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="none"><polygon points="20,20 20,180 180,100 " fill="black"/></svg>')
+      0/100% 100%,
+    linear-gradient(#fff, #fff);
+  mask-composite: exclude;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+#toggle-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  bottom: 30px;
+  position: relative;
+  background: var(--primary-color);
+}
