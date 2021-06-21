@@ -1,0 +1,80 @@
+/** User image start */
+const user_image = document.querySelector("#user-image");
+const avatar = document.querySelector("#avatar");
+user_image.addEventListener("click", () => {
+  avatar.click();
+});
+/** User image end */
+
+/** Swiper start */
+const swiper = new Swiper(".news-carousel", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  pagination: {
+    el: ".news-carousel-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1281: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+/** Swiper end */
+
+/** Morph start */
+
+let nav_transition = [
+  {
+    d: "M1080,1820C1055.24,1803.33 975.323,1842.95 931.444,1820C876,1791 810.58,1847.14 760.466,1820C694,1784 585,1781 488.205,1820C414.46,1849.71 309.053,1823.17 249.686,1820C210.006,1817.88 171.737,1801 132,1801C90.386,1801 22,1800.17 0,1820C-22,1839.83 0,1920 0,1920L1080,1920C1080,1920 1104.76,1836.67 1080,1820Z",
+  },
+  {
+    d: "M1080,1820C860.418,1263.73 427,1673 247,1673C151.189,1673 0,1820 0,1820L0,1920L1080,1920L1080,1820Z",
+  },
+  {
+    d: "M1080,0L0,0L0,1920L1080,1920L1080,0Z",
+  },
+];
+
+const start_transition = anime({
+  targets: ".transition-path",
+  d: [
+    {
+      value: nav_transition[0].d,
+    },
+    {
+      value: nav_transition[1].d,
+    },
+    {
+      value: nav_transition[2].d,
+    },
+  ],
+  duration: 1000,
+  direction: "normal",
+  autoplay: false,
+  easing: "linear",
+  elasticity: 500,
+  loop: false,
+});
+
+/** Morph end */
+const toggle_nav = document.getElementById("toggle-button");
+const nav_transition_effect = document.querySelector(".nav-transition-effect");
+
+toggle_nav.addEventListener("click", () => {
+  start_transition.play();
+  nav_transition_effect.classList.remove("d-none");
+
+  start_transition.finished.then(() => {
+    start_transition.reverse();
+  });
+});
